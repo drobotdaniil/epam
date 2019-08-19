@@ -1,0 +1,27 @@
+/* div {
+  width: 1000px;
+  height: 1000px;
+  background: url("../img/background.jpg"), linear-gradient(45deg, #f8a261, #6e9fc9),
+    linear-gradient(10deg, #db8787, purple);
+  background-blend-mode: multiply;
+} */
+/* div {
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+} */
+
+.circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  background: radial-gradient(at 60% 40%, rgb(34, 109, 34), rgb(45, 141, 45), rgb(83, 189, 83) 50%, white);
+}
+.polygon {
+  border-bottom: 100px solid green;
+  border-right: 50px solid transparent;
+  height: 0;
+  width: 100px;
+}
