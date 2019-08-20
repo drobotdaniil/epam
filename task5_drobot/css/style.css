@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.slider{
+    position: relative;
+    background-color: red;
+    margin: 25px auto;
+    width: 957px;
+}
+.slider__item {
+  width: 957px;
+  height: 605px;
+  cursor: pointer;
+  position: absolute;
+}
+.slider__item:hover .slider-item__polygon {
+  width: 958px;
+  /* margin-left: 58px; */
+  height: 605px;
+  background-color: #dee5efc5;
+  clip-path: polygon(72% 0, 100% 0, 100% 100%, 58% 100%);
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  position: relative;
+}
+.slider-item__polygon a,
+.slider-item__polygon h1,
+.slider-item__polygon h3,
+.slider-item__views {
+  display: none;
+  position: absolute;
+  bottom: 37%;
+  right:4%;
+  font-size: 32px;
+}
+.slider-item__polygon a{
+    bottom: auto;
+    top: 2%;
+    right: 7%;
+    font-size: 17px;
+    text-decoration: none;
+    color:#000;
+}
+.slider-item__polygon h1{
+    bottom: 21%;
+    right: 18%;
+    font-size: 58px;
+    font-weight: 700;
+    font-family: 'Arimo', sans-serif;
+}
+.slider__item:hover .slider-item__polygon a,
+.slider__item:hover .slider-item__polygon h1,
+.slider__item:hover .slider-item__polygon h3 {
+  display: block;
+}
+.slider__item:hover .slider-item__views{
+    display: flex;
+    align-items: center;
+    bottom: 2%;
+    right: 4%;
+    font-size: 18px;
+}
+.slider-item__views p{
+    margin-left: 10px;
+}
+/* slider */
+
+#image1, #image2, #image3{
+    display: none;
+}
+#one{
+    background-image: url("../img/London.jpg");
+}
+#two{
+    background-image: url("../img/NewYork.jpg");
+    background-size: cover; 
+}
+#three{
+    background-image: url("../img/Paris.jpg");
+    background-size: cover; 
+}
+
+.prev,
+.next{
+    position: absolute;
+    cursor: pointer;
+    content: url("../img/up.svg");
+    left: 3%;
+    top: 3%;
+    user-select: none;
+}
+.next{
+    transform: rotate(180deg);
+    bottom: 3%;
+    top: auto;
+    user-select: none;
+}
+.page{
+    position: absolute;
+    font-size: 22px;
+    color: #fafafa;
+    left: 3.6%;
+    top: 6%;
+    user-select: none;
+}
+.page:last-of-type{
+    bottom: 6%;
+    top: auto;
+    user-select: none;
+}
+
+.slider__item{
+    z-index: -1;
+}
+
+#image1:checked ~ #one,
+#image2:checked ~ #two,
+#image3:checked ~ #three{
+    z-index: 9;
+}
