@@ -20,7 +20,8 @@ body {
 }
 .slider__item:hover .slider-item__polygon {
   width: 958px;
-  /* margin-left: 58px; */
+  /*for slide to rightside, but need to change width to 900px*/
+  /* margin-left: 58px;  */ 
   height: 605px;
   background-color: #dee5efc5;
   clip-path: polygon(72% 0, 100% 0, 100% 100%, 58% 100%);
@@ -85,8 +86,8 @@ body {
     background-size: cover; 
 }
 
-.prev,
-.next{
+.slider-item__prev,
+.slider-item__next{
     position: absolute;
     cursor: pointer;
     content: url("../img/up.svg");
@@ -94,13 +95,13 @@ body {
     top: 3%;
     user-select: none;
 }
-.next{
+.slider-item__next{
     transform: rotate(180deg);
     bottom: 3%;
     top: auto;
     user-select: none;
 }
-.page{
+.slider-item__page{
     position: absolute;
     font-size: 22px;
     color: #fafafa;
@@ -108,7 +109,7 @@ body {
     top: 6%;
     user-select: none;
 }
-.page:last-of-type{
+.slider-item__page:last-of-type{
     bottom: 6%;
     top: auto;
     user-select: none;
