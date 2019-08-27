@@ -1,37 +1,50 @@
-/* div {
-  width: 1000px;
-  height: 1000px;
-  background: url("../img/background.jpg"), linear-gradient(45deg, #f8a261, #6e9fc9),
-    linear-gradient(10deg, #db8787, purple);
-  background-blend-mode: multiply;
-} */
-/* div {
-  width: 500px;
-  height: 500px;
-  background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%),
-    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
-} */
-
-/* .circle {
-  width: 300px;
-  height: 300px;
-  border-radius: 150px;
-  background: radial-gradient(at 60% 40%, rgb(34, 109, 34), rgb(45, 141, 45), rgb(83, 189, 83) 50%, white);
+.facebook,
+.linkedin,
+.pinterest,
+.youtube,
+.twitter
+{
+  background: url('../img/Social_circle.png') no-repeat -47px -28px;
+	width: 55px;
+  height: 54px;
+  display: flex;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
-.polygon {
-  border-bottom: 100px solid green;
-  border-right: 50px solid transparent;
-  height: 0;
-  width: 100px;
-} */
-
-
-.polygon{
-    background: url("../img/background.jpg");
-    width: 300px;
-    height: 300px;
+.facebook:hover{
+  background: url('../img/Social_circle.png') no-repeat -47px -96px;
 }
-.polygon:hover{
-    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+.linkedin{
+  background: url('../img/Social_circle.png') no-repeat -167px -28px;
+}
+.linkedin:hover{
+  background: url('../img/Social_circle.png') no-repeat -167px -96px;
+}
+.pinterest{
+  background: url('../img/Social_circle.png') no-repeat -229px -28px;
+}
+.pinterest:hover{
+  background: url('../img/Social_circle.png') no-repeat -229px -96px;
+}
+.youtube{
+  background: url('../img/Social_circle.png') no-repeat -350px -28px;
+}
+.youtube:hover{
+  background: url('../img/Social_circle.png') no-repeat -350px -96px;
+}
+.twitter{
+  background: url('../img/Social_circle.png') no-repeat -411px -28px;
+}
+.twitter:hover{
+  background: url('../img/Social_circle.png') no-repeat -411px -96px;
+}
+.facebook a,
+.linkedin a,
+.pinterest a,
+.youtube a,
+.twitter a{
+  margin-left: 70px;
+  margin-top: 15px;
+  text-decoration: none;
+  font-size: 20px;
 }
