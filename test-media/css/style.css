@@ -1,0 +1,163 @@
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12{
+    height: 150px;
+}
+
+.col-1{
+  width: 8.33%;
+}
+.col-2{
+  width: 16.66%;
+}
+.col-3{
+  width: 25%;
+}
+.col-4{
+  width: 33.33%;
+}
+.col-5{
+  width: 41.66%;
+}
+.col-6{
+  width: 50%;
+}
+.col-7{
+  width: 58.33%;
+}
+.col-8{
+  width: 66.66%;
+}
+.col-9{
+  width: 75%;
+}
+.col-10{
+  width: 83.33%;
+}
+.col-11{
+  width: 91.66%;
+}
+.col-12{
+  width: 100%;
+}
+
+.mostly-fluid{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mostly-fluid .col-9{
+    background: red;
+}
+
+.mostly-fluid .col-3{
+    background: silver;
+}
+.first {
+    background: green;
+
+}
+.second{
+    background: black;
+}
+.third{
+    background: rgb(30, 189, 238);
+}
+
+
+.column-drop{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column-drop .col-8{
+    background: lightgreen;
+}
+.column-drop .col-4{
+    background: blue;
+}
+.column-drop .col-12 {
+    background: rgb(57, 68, 172);
+}
+
+.layout-shifter{
+    display: flex;
+    flex-direction: row;
+}
+.layout-shifter .col-3{
+    height: 300px;
+    background: silver;
+}
+
+.layout-shifter .col-9 .col-12:first-child{
+    background: red;
+}
+.layout-shifter .col-9 .col-12:last-child{
+    background: black;
+}
+
+
+@media screen and (max-width:800px){
+    .mostly-fluid .col-9{
+        width: 100%;
+    }
+    .mostly-fluid .col-3{
+        width: 50%;
+    }
+    .mostly-fluid .col-4 {
+        width: 50%;
+    }
+    .column-drop .col-8{
+        width: 33%;
+    }
+    .column-drop .col-4{
+        width: 33%;
+    }
+    .column-drop .col-12 {
+        width: 33%;
+    }
+    .layout-shifter{
+        flex-direction: column;
+    }
+    .layout-shifter .col-3{
+        height: 150px;
+        width: 100%;
+    }
+    .layout-shifter .col-9 {
+        width: 100%;
+    }
+    .layout-shifter .col-9 .col-12:first-child{
+        width: 100%;
+    }
+    .layout-shifter .col-9 .col-12:last-child{
+        width: 100%;
+    }
+}
+@media screen and (max-width:600px){
+    .mostly-fluid .col-9{
+        width: 100%;
+    }
+    .mostly-fluid .col-3{
+        width: 100%;
+    }
+    .mostly-fluid .col-4 {
+        width: 100%;
+    }
+    .column-drop .col-8{
+        width: 100%;
+    }
+    .column-drop .col-4{
+        width: 100%;
+    }
+    .column-drop .col-12 {
+        width: 100%;
+    }
+}
