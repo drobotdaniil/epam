@@ -107,41 +107,10 @@ main {
   background: #1287bf;
   text-align: center;
   padding-top: 100px;
-  padding-bottom: 111px;
+  padding-bottom: 60px;
   padding-left: 30px;
   padding-right: 30px;
 }
-
-.circle {
-  width: 58px;
-  height: 58px;
-  border: 3px solid #ffffff;
-  margin: 0 auto;
-  border-radius: 50px;
-  margin-top: 18px;
-  margin-bottom: 45px;
-  position: relative;
-}
-.circle span,
-.circle span::after {
-  position: absolute;
-  top: 55%;
-  left: 43%;
-  width: 12px;
-  margin-top: -1px;
-  margin-left: -6px;
-  height: 2px;
-  background: #ffffff;
-}
-.circle span {
-  transform: rotate(-132deg);
-}
-.circle span::after {
-  content: "";
-  display: block;
-  transform: rotate(82deg) translateY(5px) translateX(5px);
-}
-
 .form {
   background: #ffffff;
   max-width: 680px;
@@ -152,6 +121,45 @@ main {
   padding-bottom: 85px;
   padding-left: 20px;
   padding-right: 20px;
+  display: none;
+}
+.check-fb{
+  display: none;
+}
+.check-label{
+  display: block;
+  width: 58px;
+  height: 58px;
+  border: 3px solid #ffffff;
+  margin: 0 auto;
+  border-radius: 50px;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+.check-fb:checked ~ .form{
+  display: block;
+  margin-bottom: 51px;
+}
+.check-label span,
+.check-label span::after {
+  position: absolute;
+  top: 55%;
+  left: 43%;
+  width: 12px;
+  margin-top: -1px;
+  margin-left: -6px;
+  height: 2px;
+  background: #ffffff;
+}
+.check-label span {
+  transform: rotate(-132deg);
+}
+.check-label span::after {
+  content: "";
+  display: block;
+  transform: rotate(82deg) translateY(5px) translateX(5px);
 }
 .form::after {
   content: "";
