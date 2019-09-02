@@ -171,7 +171,7 @@ main {
   left: 50%;
   top: -5%;
 }
-.circle-close {
+.form__circle-close {
   width: 45px;
   height: 45px;
   border: 2px solid #ffffff;
@@ -182,8 +182,15 @@ main {
   top: -22px;
   cursor: pointer;
 }
-.circle-close span,
-.circle-close span::after {
+.form__circle-close .check-label{
+  border: none;
+  margin-bottom: 0;
+  width: 40px;
+  height: 40px;
+  margin-top: 0;
+}
+.form__circle-close .check-label span,
+.form__circle-close .check-label span::after {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -193,10 +200,10 @@ main {
   height: 2px;
   background: #ffffff;
 }
-.circle-close span {
+.form__circle-close .check-label span {
   transform: rotate(-57deg);
 }
-.circle-close span::after {
+.form__circle-close .check-label span::after {
   content: "";
   display: block;
   transform: rotate(115deg);
