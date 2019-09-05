@@ -1,0 +1,131 @@
+/* *{
+    padding: 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: 150px;
+    grid-auto-rows: minmax(100px, auto)
+}
+.grid > div{
+    padding: 1em;
+    background: lightcoral;
+}
+.grid > .light{
+    padding: 1em;
+    background: rgb(192, 184, 179);
+}
+.included{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: 80px;
+}
+.included div{
+    background: orange;
+} */
+/* .grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 1em;
+  justify-items: stretch;
+  align-items: stretch;
+}
+.grid div {
+  padding: 1em;
+  background: orange;
+}
+.grid .light {
+  padding: 1em;
+  background: silver;
+}
+.box1 {
+  /* align-self: start;
+    justify-self: end; */
+    /* grid-column: 1/3; */
+    /* grid-row: 1/3; */
+/* } */
+/* .box2 { */
+  /* align-self: flex-end; */
+  /* grid-column: 3; */
+  /* grid-row: 1/3; */
+/* } */
+/* .box3 { */
+  /* justify-self: center; */
+  /* grid-column: 2/4; */
+  /* grid-row: 3; */
+/* } */
+/* .box6{ */
+    /* grid-column: 1/4; */
+/* } */
+/* .box4{ */
+    /* grid-column: 1; */
+    /* grid-row: 2/4; */
+/* }  */
+
+.grid{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    grid-auto-rows: minmax(70px, auto);
+    grid-gap: 10px;
+    color: #fafafa;
+    background: #000;
+}
+.grid div{
+    padding: 1em;
+}
+.grid div:nth-child(1){
+    background: purple;
+    grid-column: 1/3;
+    grid-row: 1/4;
+}
+.grid div:nth-child(2){
+    background: green;
+    grid-column: 3/5;
+    grid-row: 1/3;
+}
+.grid div:nth-child(3){
+    background: rgb(212, 129, 129);
+}
+.grid div:nth-child(4){
+    background: rgb(240, 53, 84);
+}
+.grid div:nth-child(5){
+    background: orange;
+    grid-row: 4/6;
+}
+.grid div:nth-child(6){
+    background: greenyellow;
+}
+.grid div:nth-child(7){
+    background: orangered;
+    grid-row: 5/6;
+}
+.grid div:nth-child(8){
+    background: rgb(59, 165, 179);
+    grid-column: 3/5;
+}
+.grid div:nth-child(9){
+    background: rgb(83, 179, 59);
+    grid-column: 3/5;
+    grid-row: 5/7;
+}
+.grid div:nth-child(10){
+    background: rgb(177, 179, 59);
+    grid-row: 6/8;
+}
+.grid div:nth-child(11){
+    grid-row: 7/8;
+    grid-column: 2/5;
+    background: #3b1e9c;
+}
+.grid div:nth-child(12){
+    grid-row: 8/9;
+    background: rgb(221, 7, 221);
+    grid-column: 1/5;
+}
+.grid div:nth-child(13){
+    background: #fafafa;
+}
