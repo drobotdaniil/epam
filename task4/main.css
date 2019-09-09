@@ -1,0 +1,529 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #ebebeb;
+  max-width: 1380px;
+  margin: 0 auto;
+}
+ul,
+li {
+  display: block;
+}
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: #389ef2;
+}
+/* header */
+header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(2, 2, 2, 0.609);
+  position: absolute;
+  width: 100%;
+  max-width: 1360px;
+  flex-direction: column;
+}
+
+.logo-img img {
+  width: 100px;
+}
+.header-menu-nav {
+  display: flex;
+}
+.header-menu-nav li {
+  margin-right: 20px;
+}
+.header-menu-nav li:last-child {
+  margin-right: 0px;
+}
+.header-menu-nav li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #fafafaea;
+  transition: 0.4s ease;
+}
+.header-menu-nav li a:hover {
+  color: rgb(36, 209, 36);
+}
+.top-block{
+  display: none;
+}
+/* main */
+.about-me {
+  display: flex;
+  align-items: center;
+  background-image: url("./images/background.jpg"), linear-gradient(45deg, #797878, #d2e1ec);
+  background-size: cover;
+  background-blend-mode: darken;
+  justify-content: center;
+  padding-top: 190px;
+  padding-bottom: 70px;
+  flex-direction: column;
+}
+.left-block-info {
+  text-align: center;
+  background: rgba(2, 2, 2, 0.609);
+  padding: 10px;
+  border-radius: 8px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 8px;
+  order: 1;
+}
+.name-about-me {
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: rgb(36, 209, 36);
+  visibility: hidden;
+  position: relative;
+}
+.name-about-me::after{
+  content: "I am Daniil \a a front-end developer";
+  font-family: monospace;
+  white-space: pre;
+  visibility: visible;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+.text-about-me {
+  width: 300px;
+  font-size: 15px;
+  line-height: 100%;
+  color: #fafafa;
+  margin: 0 auto;
+  margin-top: 18px;
+}
+.right-block-photo {
+  background: rgba(2, 2, 2, 0.609);
+  border-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  height: 260px;
+  order: 0;
+  text-align: center;
+  max-width: 320px;
+  width: 100%;
+}
+.right-block-photo img {
+  max-height: 100%;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.my-triger {
+  text-align: center;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+.my-triger::after {
+  content: "WORKS";
+  color: rgb(48, 170, 48);
+  font-weight: bold;
+  white-space: pre;
+  font-size: 40px;
+}
+.triger-h {
+  font-size: 35px;
+  margin-top: 45px;
+  margin-bottom: 125px;
+  color: rgb(48, 170, 48);
+  visibility: hidden;
+  position: relative;
+}
+.triger-h::after {
+  visibility: visible;
+  content: "My Programming Skills.";
+  position: absolute;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.triger-block {
+  font-size: 23px;
+  margin-bottom: 75px;
+  position: relative;
+}
+.triger-block::before{
+  position: absolute;
+  content: "I have learnt";
+  transform: translate(-50%, -50%) translateY(-45px);
+  font-size: 29px;
+}
+.triger-block li {
+  margin-bottom: 15px;
+}
+.triger1 {
+  visibility: hidden;
+  position: relative;
+  margin-top: 45px;
+}
+.triger1::before {
+  position: absolute;
+  content: "HTML5";
+  width: 120px;
+  visibility: visible;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: orangered;
+  color: #fafafa;
+  border-radius: 5px;
+  padding: 3px 20px;
+}
+.triger2 {
+  visibility: hidden;
+  position: relative;
+  height: 26px;
+}
+.triger2::before {
+  position: absolute;
+  width: 120px;
+  content: "CSS3";
+  visibility: visible;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #4242fb;
+  color: #fafafa;
+  border-radius: 5px;
+  padding: 3px 20px;
+}
+.triger3 {
+  visibility: hidden;
+  position: relative;
+  height: 26px;
+}
+.triger3::before {
+  position: absolute;
+  left: 50%;
+  width: 120px;
+  transform: translate(-50%, -50%);
+  content: "Vanilla JS";
+  visibility: visible;
+  background: #dada2e;
+  color: #fafafa;
+  border-radius: 5px;
+  padding: 3px 20px;
+}
+.triger4 {
+  visibility: hidden;
+  position: relative;
+  height: 26px;
+
+}
+.triger4::before{
+  position: absolute;
+  left: 50%;
+  width: 120px;
+  transform: translate(-50%,-50%);
+  content: "Bootstrap";
+  visibility: visible;
+  color: #fafafa;
+  border-radius: 5px;
+  padding: 3px 20px;
+  background: #a018a0;
+}
+.triger4::after{
+  content: "\A Development Tools: \A Avocode and Visual Studio.";
+  white-space: pre;
+  visibility: visible;
+}
+/* my-works */
+
+.my-works::before {
+  content: "Here is the selection of my works.";
+  font-size: 22px;
+  line-height: 70px;
+}
+.my-works {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.my-works-list {
+  display: flex;
+  flex-direction: column;
+}
+.my-works-list-item {
+  padding: 20px 20px;
+  background: rgba(173, 40, 40, 0.356);
+  transition: 0.4s ease;
+}
+.my-works-list-item:hover {
+  filter: brightness(90%);
+}
+.my-works-list-item:nth-child(2) {
+  background: #69a35a81;
+}
+.my-works-list-item:last-child {
+  background: #9b5d9b85;
+}
+.my-works-list-item a {
+  text-align: center;
+  text-decoration: none;
+  color: #fafafa;
+}
+.my-works-list-item-name {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.work-holder-photo {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.work-holder-photo img {
+  width: 100%;
+  border-radius: 8px;
+}
+.work-text {
+  font-size: 20px;
+  width: auto;
+  margin: 0 auto;
+}
+.my-works-list-item:first-child .work-text::before {
+  content: "HTML / CSS\a";
+  white-space: pre;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.my-works-list-item:nth-child(2) .work-text::before {
+  content: "HTML / CSS / JS\a";
+  white-space: pre;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.my-works-list-item:nth-child(3) .work-text::before {
+  content: "HTML / CSS / JS\a";
+  white-space: pre;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 40px;
+}
+/* link-contact-me */
+.contact-me {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.contact-me-name {
+  font-size: 35px;
+  margin-bottom: 50px;
+  color: rgb(48, 170, 48);
+  position: relative;
+  visibility: hidden;
+}
+.contact-me-name::after{
+  position: absolute;
+  visibility: visible;
+  width: 300px;
+  left: 50%;
+  transform: translate(-50%);
+  content: "I am available for work."
+}
+.contact-me-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 0 20px;
+}
+.contact-me-form-name-left,
+.contact-me-form-email-right {
+  width: 100%;
+  max-width: 450px;
+  height: 30px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid rgb(112, 111, 111);
+  background: rgb(226, 226, 226);
+}
+.contact-me-form-name-left:focus,
+.contact-me-form-email-right:focus,
+.contact-massage-center:focus {
+  background: rgb(212, 212, 212);
+}
+.contact-me-form-name-left::placeholder,
+.contact-me-form-email-right::placeholder,
+.contact-massage-center::placeholder {
+  color: #000;
+}
+.contact-massage-center {
+  width: 100%;
+  resize: none;
+  max-width: 450px;
+  margin-bottom: 20px;
+  padding: 10px;
+  outline: none;
+  border-radius: 3px;
+  font-size: 15px;
+  height: 100px;
+  border: 1px solid rgb(112, 111, 111);
+  background: rgb(226, 226, 226);
+}
+.contact-form-submit-center {
+  width: 100%;
+  max-width: 450px;
+  padding: 10px 0;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  border: 1px solid rgb(112, 111, 111);
+  outline: none;
+  cursor: pointer;
+  background: rgb(226, 226, 226);
+  font-size: 14px;
+  color: #000;
+}
+.contact-form-submit-center:hover {
+  background: rgb(212, 212, 212);
+}
+
+/* footer */
+
+footer {
+  background-image: url("./images/footer.jpeg"), linear-gradient(45deg, #797878, #d2e1ec);
+  background-blend-mode: multiply;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  color: #fafafaea;
+}
+.find-me {
+  font-size: 28px;
+  padding: 15px 0;
+  background: rgba(2, 2, 2, 0.609);
+}
+.footer-ul-social {
+  display: flex;
+  background: rgba(2, 2, 2, 0.609);
+  justify-content: center;
+  padding-bottom: 15px;
+}
+footer::after {
+  content: "(c) THE3D. All rights reserved.";
+  background: rgba(2, 2, 2, 0.609);
+  font-size: 18px;
+  line-height: 35px;
+}
+.footer-ul-social li {
+  margin-right: 20px;
+}
+.footer-ul-social li:last-child {
+  margin-right: 0;
+}
+.footer-ul-social li a {
+  font-size: 20px;
+  color: #fafafad0;
+  text-decoration: none;
+  transition: 0.4s ease;
+}
+.footer-ul-social li a:hover {
+  color: rgb(36, 209, 36);
+}
+@media screen and (min-width: 576px) {
+  header {
+    flex-direction: row;
+  }
+  .about-me {
+    flex-direction: row;
+    padding-top: 160px;
+  }
+  .left-block-info {
+    order: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-top: 20px;
+  }
+  .right-block-photo {
+    order: 1;
+    width: auto;
+    height: 226px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 8px;
+  }
+  .triger-h {
+    margin-bottom: 80px;
+  }
+  .contact-me-name{
+    margin-bottom: 20px;
+  }
+  .contact-me-name::after{
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-menu-nav li a {
+    font-size: 25px;
+  }
+  .name-about-me {
+    font-size: 30px;
+  }
+  .text-about-me {
+    width: 300px;
+    font-size: 20px;
+    margin-top: 25px;
+  }
+  .left-block-info {
+    padding: 30px;
+  }
+  .right-block-photo {
+    height: 399px;
+  }
+  .right-block-photo img {
+    padding: 10px;
+    padding-right: 30px;
+  }
+  .triger-h {
+    margin-bottom: 0px;
+  }
+  .contact-me-form-email-right {
+    max-width: 250px;
+  }
+  .contact-me-form-name-left {
+    max-width: 250px;
+    margin-right: 20px;
+  }
+  .contact-massage-center {
+    max-width: 520px;
+  }
+  .contact-form-submit-center {
+    max-width: 520px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .name-about-me {
+    font-size: 40px;
+  }
+  .text-about-me {
+    width: 500px;
+    font-size: 25px;
+    margin-top: 32px;
+  }
+  .right-block-photo {
+    height: 389px;
+  }
+  .work-text {
+    width: 900px;
+  }
+  .my-works-list-item {
+    padding: 20px 0px;
+  }
+}
