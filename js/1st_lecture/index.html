@@ -1,0 +1,17 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<script>
+var d = document, n;
+while (n * 1 != n || n * 1 > 10 || n * 1 < 1)
+   n = prompt ('Укажите размер матрицы', 'Натуральное число не более 10');
+d.write ('<table align="center" border="1" cellspacing="0" cellpadding="0">\n');
+for (var k, j = m = 0, q = 1; j < n; j++, m -= q, q *= -1, d.write ('</tr>\n'))
+   for (d.write ('<tr>'), k = 0; k < n; k++, m += q)
+      d.write ('<td width="40" height="40" align="center">' + m + '</td>');
+d.write ('</table>\n');
+</script>
+</head>
+<body>
+</body>
+</html>
