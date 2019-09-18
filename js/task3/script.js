@@ -88,7 +88,6 @@ function createTable() {
             }
         });
         output += "</table>";
-        document.querySelector('#output').innerHTML = output;
     }
     else {
         goodsByPrice.forEach(item => {
@@ -107,6 +106,6 @@ function createTable() {
             }
         });
         output += "</table>";
-        document.querySelector('#output').innerHTML = output;
     }
+    document.querySelector('#output').innerHTML = output;
 }
