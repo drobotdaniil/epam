@@ -65,27 +65,45 @@ createTable();
 
 //function for creating a table
 function createTable() {
+    let output = `<table>
+                    <tr>
+                        <th>Название</th>
+                        <th>Рейтинг</th>
+                        <th>Цена</th>
+                    </tr>`;
     if (selector.value == "Рейтинг") {
-        let output = "<table>"
-        output += "<tr><th>Название</th><th>Рейтинг</th><th>Цена</th></tr>"
         goodsByRating.forEach(item => {
             if (Object.keys(item.price).length === 2) {
-                output += "<tr><td>" + item.name + "</td>" + "<td>" + item.ratingRevievs + "</td>" + "<td>" + item.price.newUan + "</td></tr>"
+                output += `<tr>
+                            <td>${item.name}</td>
+                            <td>${item.ratingRevievs}</td>
+                            <td>${item.price.newUan}</td>
+                        </tr>`;
             } else {
-                output += "<tr><td>" + item.name + "</td>" + "<td>" + item.ratingRevievs + "</td>" + "<td>" + item.price + "</td></tr>"
+                output += `<tr>
+                            <td>${item.name}</td>
+                            <td>${item.ratingRevievs}</td>
+                            <td>${item.price}</td>
+                        </tr>`;
             }
         });
         output += "</table>";
         document.querySelector('#output').innerHTML = output;
     }
     else {
-        let output = "<table>"
-        output += "<tr><th>Название</th><th>Рейтинг</th><th>Цена</th></tr>"
         goodsByPrice.forEach(item => {
             if (Object.keys(item.price).length === 2) {
-                output += "<tr><td>" + item.name + "</td>" + "<td>" + item.ratingRevievs + "</td>" + "<td>" + item.price.newUan + "</td></tr>"
+                output += `<tr>
+                            <td>${item.name}</td>
+                            <td>${item.ratingRevievs}</td>
+                            <td>${item.price.newUan}</td>
+                        </tr>`;
             } else {
-                output += "<tr><td>" + item.name + "</td>" + "<td>" + item.ratingRevievs + "</td>" + "<td>" + item.price + "</td></tr>"
+                output += `<tr>
+                            <td>${item.name}</td>
+                            <td>${item.ratingRevievs}</td>
+                            <td>${item.price}</td>
+                        </tr>`;
             }
         });
         output += "</table>";
