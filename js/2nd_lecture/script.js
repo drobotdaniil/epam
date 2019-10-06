@@ -71,10 +71,10 @@
 // if(+s[0] + +s[1] + +s[2] == +s[3]+ +s[4] + +s[5]) console.log("true");
 // else console.log("False");
 
-// let arr = ['aaa', 'bbb', 'ccc', 'ddd', 'aaa', 'aaa', 'aaaa', 'aaaa', 'aaaa'];
+let arr = ['aaa', 'bbb', 'ccc', 'ddd', 'aaa', 'aaa', 'aaaa', 'aaaa', 'aaaa'];
 
-// let newArr = arr.filter((item, pos) => arr.indexOf(item) == pos);
-// console.log(newArr)
+let newArr = arr.filter((item, pos) => arr.indexOf(item) == pos);
+console.log(newArr)
 // let result = [];
 
 // let arr2 = [];
@@ -112,20 +112,20 @@
 // console.log(negative2)
 
 
-let data = ['1', '-10', '15', '20', '-5', '8', '14'];
+// let data = ['1', '-10', '15', '20', '-5', '8', '14'];
 
-let newData = [];
+// let newData = [];
 
-for (let i = 0; i < data.length; i++){
-    newData.push(parseInt(data[i]));
-}
-console.log(data)
-console.log(newData);
+// for (let i = 0; i < data.length; i++){
+//     newData.push(parseInt(data[i]));
+// }
+// console.log(data)
+// console.log(newData);
 
-let newData2 = data.map(function(item){
-    return parseInt(item);
-});
-console.log(newData2);
+// let newData2 = data.map(function(item){
+//     return parseInt(item);
+// });
+// console.log(newData2);
 
 // let numbers = [1, 10, 15, 20, 5, -8, 14];
 
