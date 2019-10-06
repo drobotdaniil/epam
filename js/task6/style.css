@@ -1,0 +1,26 @@
+.goods{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.goods-item{
+    width: 25%;
+    text-align: center;
+}
+.goods-item__img{
+    width: 200px;
+}
+.add{
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    margin: 20px auto;
+}
+input[type="text"],
+input[type="number"]{
+    margin-bottom: 20px;
+}
+.image{
+    margin-bottom: 20px;
+}
