@@ -60,7 +60,7 @@ btnList.addEventListener('click', () => {
 //loop for a pagination
 pages.forEach(item => {
     item.addEventListener('click', function () {
-        scrollIt(goodsDiv); 
+        scrollIt(goodsDiv);
         showPage(this);
     });
 });
@@ -77,10 +77,10 @@ function showPage(item) {
     let notes = goods.slice(start, end);
     let output = '';
     notes.forEach(note => {
-        if(btnList.classList.contains("active")){
+        if (btnList.classList.contains("active")) {
             output += `<div class='goods-item_listView'>`;
         }
-        else{
+        else {
             output += `<div class='goods__item goods-item'>`;
         }
         output += `<img src='${note.imgUrl}' alt='${note.name}' class='goods-item__img'>
@@ -99,3 +99,13 @@ function scrollIt(element) {
         'top': element.offsetTop
     });
 }
+document.addEventListener("DOMContentLoaded", function (event) {
+    let allElements = document.getElementsByTagName("*");
+    for (var i = 0; i < allElements.length; i++) {
+        allElements[i].addEventListener("click", function () { 
+            console.log(this.tagName);}, false);
+            
+    };
+    document.addEventListener("click", function () { console.log(this); }, false);
+    window.addEventListener("click", function () { console.log(this); }, false);
+});
