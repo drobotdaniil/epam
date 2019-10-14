@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">ComicLAND</a>
+        <a href="cart.html"><i class="fa fa-shopping-cart"></i> <span class="item-counter" id="item-counter">1</span>
+        </a>
+    </header>
+    <main>
+        <div class="start" id="start">
+            <h3 id="title">Нажмите на кнопку, чтобы выбрать вид списка или сетку.</h3>
+            <button id="btn-list"><i class="fa fa-bars"></i> List</button>
+            <button id="btn-grid"><i class="fa fa-th-large"></i> Grid</button>
+        </div>
+        <br>
+        <div class="manipulations" id="manipulations">
+            <label for="available">В наличии
+                <input type="checkbox" name="available" id="available">
+            </label>
+            <select id="selector">
+                <option>По популярности</option>
+                <option>От дорогих к дешевым</option>
+                <option>От дешевых к дорогим</option>
+            </select>
+        </div>
+        <div class="goods" id="goods">
+            <!-- <div class='goods__item goods-item_listView'>
+                    <img src='img/1.jpg' alt='${note.name}' class='goods-item__img'>
+                    <h2 class='goods-item__title'>Современные Мстители. Следующее поколение</h2>
+                    <div class="goods-item__desc">
+                        <p class='goods-item__available'>В наличии</p>
+                        <p class='goods-item__price'> 100<span> грн</span></p>
+                        <button class="goods-item__btn">КУПИТЬ</button>
+                    </div>
+        
+                </div> -->
+            <!-- <div class="cart">
+            <div class="cart__item cart-item">
+                <button class="cart-item__delete">x</button>
+                <img src="img/1.jpg" alt="" class="cart-item__img">
+                <h1 class="cart-item__title">От дешевых к дорогим</h1>
+                <div class="cart-item__counts">
+                    <button class="btn-minus">-</button>
+                    5
+                    <button class="btn-plus">+</button>
+                </div>
+                <div class="cart-item__price">
+                    <p>Цена:</p>
+                    <p>1000 <span class="value">грн</span></p>
+                </div>
+            </div>
+        </div> -->
+        </div>
+        <ul class="pagination" id="pages">
+        </ul>
+    </main>
+    <footer>
+        <h1>Get in touch</h1>
+        <div class="socials">
+            <div class="socials__item"><img src="img/icon8.png" alt="facebook"></div>
+            <div class="socials__item"><img src="img/icon9.png" alt="twitter"></div>
+            <div class="socials__item"><img src="img/icon10.png" alt="google+"></div>
+            <div class="socials__item"><img src="img/icon11.png" alt="linkedin"></div>
+        </div>
+        <p class="subscribe">
+            Subscribe to our newsletter to stay update with what is new
+        </p>
+        <form action="" class="subscribe-form">
+            <input type="email" placeholder="Email Address">
+            <button type="submit">Subscribe</button>
+        </form>
+        <div class="rights">
+            THE3D © 2019 All Rights Reserved.
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

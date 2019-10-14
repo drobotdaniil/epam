@@ -1,0 +1,194 @@
+[
+    {
+        "id": 1,
+        "name": "Тор. Плоды осады. Пожиратели миров",
+        "price": "300",
+        "popularity": 700,
+        "imgUrl": "img/1.jpg",
+        "avilable": true
+    },
+    {
+        "id": 2,
+        "name": "Непобедимый Человек-Паук",
+        "price": "500",
+        "popularity": 300,
+        "imgUrl": "img/2.jpg",
+        "avilable": true
+    },
+    {
+        "id": 3,
+        "name": "Росомаха. Начало",
+        "price": "250",
+        "popularity": 400,
+        "imgUrl": "img/3.jpg",
+        "avilable": false
+    },
+    {
+        "id": 4,
+        "name": "Хэнк Пим",
+        "price": "285",
+        "popularity": 100,
+        "imgUrl": "img/4.jpg",
+        "avilable": true
+    },
+    {
+        "id": 5,
+        "name": "Дедпул",
+        "price": "380",
+        "popularity": 1000,
+        "imgUrl": "img/5.jpg",
+        "avilable": true
+    },
+    {
+        "id": 6,
+        "name": "Земля икс. Книга вторая",
+        "price": "410",
+        "popularity": 700,
+        "imgUrl": "img/6.jpg",
+        "avilable": false
+    },
+    {
+        "id": 7,
+        "name": "Новый Призрачный Гонщик. Двигатели Возмездия.",
+        "price": "230",
+        "popularity": 450,
+        "imgUrl": "img/7.jpg",
+        "avilable": false
+    },
+    {
+        "id": 8,
+        "name": "Что за... Перчатка бесконечности?!",
+        "price": "310",
+        "popularity": 410,
+        "imgUrl": "img/8.jpg",
+        "avilable": true
+    },
+    {
+        "id": 9,
+        "name": "Люди Икс. Начало",
+        "price": "180",
+        "popularity": 580,
+        "imgUrl": "img/9.jpg",
+        "avilable": false
+    },
+    {
+        "id": 10,
+        "name": "Дедпул. Минибус 2",
+        "price": "390",
+        "popularity": 1010,
+        "imgUrl": "img/10.jpg",
+        "avilable": false
+    },
+    {
+        "id": 11,
+        "name": "Соколоный глаз",
+        "price": "210",
+        "popularity": 380,
+        "imgUrl": "img/11.jpg",
+        "avilable": true
+    },
+    {
+        "id": 12,
+        "name": "Новый Человек-Паук 2099",
+        "price": "380",
+        "popularity": 2100,
+        "imgUrl": "img/12.jpg",
+        "avilable": true
+    },
+    {
+        "id": 13,
+        "name": "Путь к Гражданской войне",
+        "price": "405",
+        "popularity": 660,
+        "imgUrl": "img/13.jpg",
+        "avilable": true
+    },
+    {
+        "id": 14,
+        "name": "Люди Икс. Худший из Людей Икс",
+        "price": "290",
+        "popularity": 200,
+        "imgUrl": "img/14.jpg",
+        "avilable": false
+    },
+    {
+        "id": 15,
+        "name": "Капитан Марвел. Том 2. На стиле",
+        "price": "235",
+        "popularity": 777,
+        "imgUrl": "img/15.jpg",
+        "avilable": false
+    },
+    {
+        "id": 16,
+        "name": "Современные Мстители. Следующее поколение",
+        "price": "610",
+        "popularity": 200,
+        "imgUrl": "img/16.jpg",
+        "avilable": false
+    },
+    {
+        "id": 17,
+        "name": "Мстители. Начало",
+        "price": "170",
+        "popularity": 600,
+        "imgUrl": "img/17.jpg",
+        "avilable": true
+    },
+    {
+        "id": 18,
+        "name": "Дардевил. Шум и ярость.",
+        "price": "255",
+        "popularity": 590,
+        "imgUrl": "img/18.jpg",
+        "avilable": true
+    },
+    {
+        "id": 19,
+        "name": "Люди-Х'92",
+        "price": "330",
+        "popularity": 190,
+        "imgUrl": "img/19.jpg",
+        "avilable": true
+    },
+    {
+        "id": 20,
+        "name": "Совершенный Человек-паук",
+        "price": "390",
+        "popularity": 340,
+        "imgUrl": "img/20.jpg",
+        "avilable": true
+    },
+    {
+        "id": 21,
+        "name": "Мстители. Начало",
+        "price": "315",
+        "popularity": 400,
+        "imgUrl": "img/17.jpg",
+        "avilable": false
+    },
+    {
+        "id": 22,
+        "name": "Дардевил. Шум и ярость.",
+        "price": "325",
+        "popularity": 800,
+        "imgUrl": "img/18.jpg",
+        "avilable": true
+    },
+    {
+        "id": 23,
+        "name": "Люди-Х'92",
+        "price": "510",
+        "popularity": 120,
+        "imgUrl": "img/19.jpg",
+        "avilable": true
+    },
+    {
+        "id": 24,
+        "name": "Совершенный Человек-паук",
+        "price": "500",
+        "popularity": 990,
+        "imgUrl": "img/20.jpg",
+        "avilable": false
+    }
+]
