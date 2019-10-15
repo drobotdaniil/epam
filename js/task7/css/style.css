@@ -11,6 +11,9 @@ body {
 a {
   text-decoration: none;
 }
+button{
+  cursor: pointer;
+}
 /* header */
 header {
   background: #de2b24;
@@ -31,12 +34,14 @@ header a i {
   font-size: 28px !important;
 }
 .item-counter{
-  width: 18px;
+  width: 21px;
+  /* height: 18px; */
   border-radius: 50px;
-  /* height: 8px */
   background: #fafafa;
   color: #de2b24;
-  font-size: 16px;
+  /* padding: 2px; */
+  font-size: 17px;
+  line-height: 127%;
   position: absolute;
 }
 /* end header */
@@ -221,6 +226,17 @@ header a i {
 }
 .cart-item__price p:nth-child(2) {
   font-size: 30px;
+}
+
+.full-price{
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+}
+.full-price span:last-child{
+  font-size: 30px;
+  font-weight: 700;
+  color: #de2b24;
 }
 /* end cart */
 

@@ -8,13 +8,14 @@ fetch('./data.json')
     .then(data => {
         let goods = data;
         checkCart();
-        // console.log(goods);
         showCart();
         showMiniCart();
         function showCart() {
             let out = '';
+            let sum = 0;
             if (isEmpty(cart)) {
                 out += "<h1>Ваша корзина пуста. Возвращайтесь на <a href='index.html'>Главная</a> и быстрее делайте покупку</h1>"
+                // showMiniCart();
             } else {
                 for (let key in cart) {
                     out += `<div class="cart__item cart-item">
@@ -31,7 +32,9 @@ fetch('./data.json')
                         <p>${cart[key] * goods[key - 1].price} <span class="value">грн</span></p>
                     </div>
                 </div>`;
+                sum += cart[key] * goods[key - 1].price;
                 }
+                out += `<div class="full-price"><span>Общая цена:</span><span> ${sum} грн</span></div>`
             }
             cartDiv.innerHTML = out;
         }
@@ -42,6 +45,7 @@ fetch('./data.json')
             if (targetPlus) {
                 cart[targetPlus]++;
                 localStorage.setItem('cart', JSON.stringify(cart));
+                showMiniCart();
                 showCart();
             } else if (targetMinus) {
                 if (cart[targetMinus] > 1) cart[targetMinus]--;
@@ -49,6 +53,7 @@ fetch('./data.json')
                     delete cart[targetMinus];
                 }
                 localStorage.setItem('cart', JSON.stringify(cart));
+                showMiniCart();
                 showCart();
             } else if (targetDelete) {
                 delete cart[targetDelete];
@@ -65,7 +70,16 @@ function checkCart() {
     }
 }
 function showMiniCart() {
-    counterSpan.innerHTML = Object.keys(cart).length;
+    if (Object.keys(cart).length != 0) {
+        let sum = 0;
+        for (let key in cart) {
+            sum += cart[key];
+        }
+        counterSpan.innerHTML = sum;
+        counterSpan.classList.remove('hidden');
+    } else{
+        counterSpan.classList.add('hidden');
+    }
 }
 function isEmpty(obj) {
     for (var prop in obj) {

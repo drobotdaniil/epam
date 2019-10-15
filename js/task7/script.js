@@ -275,7 +275,16 @@ function checkCart() {
     }
 }
 function showMiniCart() {
-    counterSpan.innerHTML = Object.keys(cart).length;
+    if (Object.keys(cart).length != 0) {
+        let sum = 0;
+        for (let key in cart) {
+            sum += cart[key];
+        }
+        counterSpan.innerHTML = sum;
+        counterSpan.classList.remove('hidden');
+    } else {
+        counterSpan.classList.add('hidden');
+    }
 }
 function scrollIt(element) {
     window.scrollTo({
