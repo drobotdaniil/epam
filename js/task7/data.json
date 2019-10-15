@@ -5,7 +5,7 @@
         "price": "300",
         "popularity": 700,
         "imgUrl": "img/1.jpg",
-        "avilable": true
+        "available": true
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "price": "500",
         "popularity": 300,
         "imgUrl": "img/2.jpg",
-        "avilable": true
+        "available": true
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "price": "250",
         "popularity": 400,
         "imgUrl": "img/3.jpg",
-        "avilable": false
+        "available": false
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "price": "285",
         "popularity": 100,
         "imgUrl": "img/4.jpg",
-        "avilable": true
+        "available": true
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "price": "380",
         "popularity": 1000,
         "imgUrl": "img/5.jpg",
-        "avilable": true
+        "available": true
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "price": "410",
         "popularity": 700,
         "imgUrl": "img/6.jpg",
-        "avilable": false
+        "available": false
     },
     {
         "id": 7,
@@ -53,7 +53,7 @@
         "price": "230",
         "popularity": 450,
         "imgUrl": "img/7.jpg",
-        "avilable": false
+        "available": false
     },
     {
         "id": 8,
@@ -61,7 +61,7 @@
         "price": "310",
         "popularity": 410,
         "imgUrl": "img/8.jpg",
-        "avilable": true
+        "available": true
     },
     {
         "id": 9,
@@ -69,7 +69,7 @@
         "price": "180",
         "popularity": 580,
         "imgUrl": "img/9.jpg",
-        "avilable": false
+        "available": false
     },
     {
         "id": 10,
@@ -77,7 +77,7 @@
         "price": "390",
         "popularity": 1010,
         "imgUrl": "img/10.jpg",
-        "avilable": false
+        "available": false
     },
     {
         "id": 11,
@@ -85,7 +85,7 @@
         "price": "210",
         "popularity": 380,
         "imgUrl": "img/11.jpg",
-        "avilable": true
+        "available": true
     },
     {
         "id": 12,
@@ -93,7 +93,7 @@
         "price": "380",
         "popularity": 2100,
         "imgUrl": "img/12.jpg",
-        "avilable": true
+        "available": true
     },
     {
         "id": 13,
@@ -101,7 +101,7 @@
         "price": "405",
         "popularity": 660,
         "imgUrl": "img/13.jpg",
-        "avilable": true
+        "available": true
     },
     {
         "id": 14,
@@ -109,7 +109,7 @@
         "price": "290",
         "popularity": 200,
         "imgUrl": "img/14.jpg",
-        "avilable": false
+        "available": false
     },
     {
         "id": 15,
@@ -117,7 +117,7 @@
         "price": "235",
         "popularity": 777,
         "imgUrl": "img/15.jpg",
-        "avilable": false
+        "available": false
     },
     {
         "id": 16,
@@ -125,7 +125,7 @@
         "price": "610",
         "popularity": 200,
         "imgUrl": "img/16.jpg",
-        "avilable": false
+        "available": false
     },
     {
         "id": 17,
@@ -133,7 +133,7 @@
         "price": "170",
         "popularity": 600,
         "imgUrl": "img/17.jpg",
-        "avilable": true
+        "available": true
     },
     {
         "id": 18,
@@ -141,7 +141,7 @@
         "price": "255",
         "popularity": 590,
         "imgUrl": "img/18.jpg",
-        "avilable": true
+        "available": true
     },
     {
         "id": 19,
@@ -149,7 +149,7 @@
         "price": "330",
         "popularity": 190,
         "imgUrl": "img/19.jpg",
-        "avilable": true
+        "available": true
     },
     {
         "id": 20,
@@ -157,7 +157,7 @@
         "price": "390",
         "popularity": 340,
         "imgUrl": "img/20.jpg",
-        "avilable": true
+        "available": true
     },
     {
         "id": 21,
@@ -165,7 +165,7 @@
         "price": "315",
         "popularity": 400,
         "imgUrl": "img/17.jpg",
-        "avilable": false
+        "available": false
     },
     {
         "id": 22,
@@ -173,7 +173,7 @@
         "price": "325",
         "popularity": 800,
         "imgUrl": "img/18.jpg",
-        "avilable": true
+        "available": true
     },
     {
         "id": 23,
@@ -181,7 +181,7 @@
         "price": "510",
         "popularity": 120,
         "imgUrl": "img/19.jpg",
-        "avilable": true
+        "available": true
     },
     {
         "id": 24,
@@ -189,6 +189,6 @@
         "price": "500",
         "popularity": 990,
         "imgUrl": "img/20.jpg",
-        "avilable": false
+        "available": false
     }
 ]
