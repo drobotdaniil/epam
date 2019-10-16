@@ -77,12 +77,13 @@ fetch('./data.json')
         goodsDiv.addEventListener('click', function (e) {
             let item = e.target.dataset.action;
             if (item) {
+                let goodName = goods.filter(good => good.id == item)[0].name;
                 if (basket[item] != undefined) {
                     basket[item]++;
                 } else {
                     basket[item] = 1;
                 }
-                alert('Товар добавлен в корзину!');
+                alert(`Товар "${goodName}" добавлен в корзину!`);
                 localStorage.setItem('basket', JSON.stringify(basket));
                 showMinibasket()
             }
