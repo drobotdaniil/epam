@@ -14,7 +14,7 @@ var manipulations = document.querySelector("#manipulations");
 var startDiv = document.querySelector("#start");
 var counterSpan = document.querySelector('#item-counter'); //variables for counts items on a page
 
-var notesOnPage = 8;
+var notesOnPage = 6;
 var active;
 var xmlhttp = new XMLHttpRequest();
 var url = "./data.json";
